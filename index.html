@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Mission Game</title>
+
+  <link rel="stylesheet" href="style.css"/>
+
+  <!-- Confetti -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+
+<body>
+
+  <!-- HACKING SCREEN -->
+  <div class="loading-screen" id="loadingScreen">
+
+    <div class="terminal">
+
+      <p>> Connecting to server...</p>
+      <p>> Access granted...</p>
+      <p>> Loading challenge system...</p>
+      <p>> Initializing mission...</p>
+
+      <h2 class="typing">
+        SYSTEM READY_
+      </h2>
+
+    </div>
+
+  </div>
+
+  <!-- MAIN WEBSITE -->
+  <div id="mainContent" class="hidden">
+
+    <div class="bg-animation"></div>
+
+    <button class="theme-toggle" id="themeBtn">
+      🌙
+    </button>
+
+    <!-- GAME BOX -->
+    <div class="game-box" id="mainBox">
+
+      <h1 class="typing-text"></h1>
+
+      <p class="subtitle">
+        Accept the enemy request.
+      </p>
+
+      <div class="buttons">
+
+        <button id="yesBtn" class="game-btn green">
+          ACCEPT 🚀
+        </button>
+
+        <button id="noBtn" class="game-btn red">
+          DECLINE ❌
+        </button>
+
+      </div>
+
+    </div>
+
+    <!-- QUESTIONS -->
+    <div class="questions hidden" id="questionsBox">
+
+      <h2>🏆 MISSION UNLOCKED</h2>
+
+      <div class="question">
+        <label>1. When should the challenge start?</label>
+        <input type="text" placeholder="Tomorrow..." />
+      </div>
+
+      <div class="question">
+        <label>2. What time are you free?</label>
+        <input type="text" placeholder="6 PM..." />
+      </div>
+
+      <div class="question">
+        <label>3. First activity?</label>
+        <input type="text" placeholder="Gaming..." />
+      </div>
+
+      <button class="submitBtn" id="submitBtn">
+        COMPLETE MISSION ✅
+      </button>
+
+    </div>
+
+    <!-- FINAL -->
+    <div class="winner hidden" id="winnerBox">
+
+      <h1>🎉 MISSION ACCEPTED 🎉</h1>
+
+      <p>
+        Challenge successfully activated.
+      </p>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
